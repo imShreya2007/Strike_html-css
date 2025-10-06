@@ -35,6 +35,7 @@ body {
     list-style:none; 
     display:flex; 
     gap:1.5rem; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 .nav-links li a { 
     color:#fff; 
@@ -77,6 +78,7 @@ body {
     position: relative;
     overflow: hidden;
     padding: 0 2rem;
+    
 }
 
 .hero-content h1 {
@@ -132,6 +134,15 @@ body {
     right: 50%;
     animation-delay: 5s;
 }
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
 
 /* Responsive Hero */
 @media (max-width: 992px) {
@@ -375,3 +386,4 @@ footer{
     align-items:center; 
 }
 }
+
